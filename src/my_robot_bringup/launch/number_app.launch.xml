@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="my_package" exec="number_publisher" name="my_number_publisher" namespace="/abc" output="screen">
+        <remap from="number" to="my_number" />
+        <rosparam file="$(find-pkg-share my_robot_bringup)/config/number_app.yaml" />
+    </node>
+
+    <node pkg="my_package" exec="number_sub_pub" name="my_number_counter" namespace="/abc" output="screen">
+        <remap from="number" to="my_number" />
+    </node>
+</launch>

@@ -1,0 +1,18 @@
+<launch>
+    <node pkg="my_package" exec="radio_tower" name="radio_tower_1">
+        <param name="name" value="hello 1"/>
+    </node>
+    <node pkg="my_package" exec="radio_tower" name="radio_tower_2">
+        <param name="name" value="hello 2"/>
+    </node>
+    <node pkg="my_package" exec="radio_tower" name="radio_tower_3">
+        <param name="name" value="hello 3"/>
+    </node>
+    <node pkg="my_package" exec="radio_tower" name="radio_tower_4">
+        <param name="name" value="hello 4"/>
+    </node>
+    <node pkg="my_package" exec="radio_tower" name="radio_tower_5">
+        <param name="name" value="hello 5"/>
+    </node>
+    <node pkg="my_package" exec="smartphone" />
+</launch>
